@@ -569,3 +569,11 @@ background-color: #030033;
 	border: solid rgba(0,0,0,0.3) thin;
 	box-shadow: 0 0 10px -2px #000;
 }
+.custom-people .custom-people-item{
+	min-height: 100px;
+}
+.custom-people .custom-people-image{
+	position: relative;
+	height: 80px;
+	margin-right: 20px;
+}

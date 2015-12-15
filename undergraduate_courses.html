@@ -22,12 +22,17 @@
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
     <script src="includes/js/script1.js"></script>
+
+        
+            <style type="text/css" media="screen">
+        #flashContent { width:100%; height:100%; }
+        </style>
 </head>
 
 <body>
 
     <div class="container" style="background-color:#181818;" id="main">
-
+    
         <div class="navbar navbar-fixed-top custom_navbar">
             <div class="container ">
 
@@ -117,7 +122,7 @@
                         </li>
                         <li class="divider-vertical "></li>
                         <li>
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="menu_color">Facilities & Resources</span><strong class="caret"></strong></a>
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="menu_color">Facilities &nbsp; Resources</span><strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#">Lab1</a>
@@ -159,6 +164,41 @@
 
 
         <div class="container innerpage" style="height:auto;">
+        <div id="flashContent">
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="courses" align="middle">
+                <param name="movie" value="courses.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="play" value="true" />
+                <param name="loop" value="true" />
+                <param name="wmode" value="window" />
+                <param name="scale" value="showall" />
+                <param name="menu" value="true" />
+                <param name="devicefont" value="false" />
+                <param name="salign" value="" />
+                <param name="allowScriptAccess" value="always" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="courses.swf" width="100%" height="100%">
+                    <param name="movie" value="courses.swf" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="play" value="true" />
+                    <param name="loop" value="true" />
+                    <param name="wmode" value="window" />
+                    <param name="scale" value="showall" />
+                    <param name="menu" value="true" />
+                    <param name="devicefont" value="false" />
+                    <param name="salign" value="" />
+                    <param name="allowScriptAccess" value="always" />
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflash">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </div>
         <h3 style="margin-left:10px;">Courses</h3>
             <div class="accordion" id="accordion2">
 
@@ -274,7 +314,7 @@
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                        <a id="sem_3" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
         Semester 3
       </a>
                     </div>
@@ -283,7 +323,7 @@
                             <p>The following compulsory courses are offered to Computer Engineering students in their 3<sup>rd</sup>&nbsp;semester.</p>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>CO221 : Digital Design (3 credits)</strong></span></p>
+                            <p id="subject_CO221"><span style="text-decoration: underline;"><strong>CO221 : Digital Design (3 credits)</strong></span></p>
                             <p><strong>Course contents:&nbsp;</strong></p>
                             <p>Introduction to digital logic, Number systems and digital logic, Combinational logic circuits, Modular design of combinational circuits, Sequential logic circuits and memory elements, Design of synchronous sequential circuits, Analysis and design of asynchronous sequential circuits, Digital circuit design and implementation</p>
                             <p>(Lectures &#45; 30h ,&nbsp; Practical classes &#45; 16h,&nbsp; Assignments &#45; 14h)</p>
@@ -294,7 +334,7 @@
                             </ul>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>CO222 : Programming Methodology (3 credits)</strong></span></p>
+                            <p id="subject_CO222"><span style="text-decoration: underline;"><strong>CO222 : Programming Methodology (3 credits)</strong></span></p>
                             <p><strong>Course Content:</strong></p>
                             <p>Problem solving, Storing and naming data and operators, Control flow, Using standard library functions, Structured programming, Static allocation, References (pointers), Linked structures, Memory layout, Language tool-chains, Support tools.</p>
                             <p>(Lectures &#45; 24h , Tutorial classes &#45; 8h,&nbsp; Practical classes &#45; 14h,&nbsp; Assignments &#45; 12h)</p>
@@ -304,7 +344,7 @@
                             </ul>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>CO223 : Computer Communication Networks I (3 credits)</strong></span></p>
+                            <p  id="subject_CO223"><span style="text-decoration: underline;"><strong>CO223 : Computer Communication Networks I (3 credits)</strong></span></p>
                             <p><strong>Course Content:</strong></p>
                             <p>Communication networks, Terminology, classification, and performance metrics, Network Design: Layered network architectures, Network applications and transport services, Packet-switching networks, Transmission over links and local area networks, Physical transmission fundamentals, Circuit-switching networks.</p>
                             <p>(Lectures &#45; 30h, &nbsp;Tutorial classes &#45; 2h, &nbsp;Practical classes &#45; 22h, &nbsp;Assignments &#45; 4h)</p>
@@ -314,19 +354,19 @@
                             </ul>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>EM201: Mathematics III (3 credits)</strong></span></p>
+                            <p  id="subject_EM201"><span style="text-decoration: underline;"><strong>EM201: Mathematics III (3 credits)</strong></span></p>
                             <p><strong>Course Content:</strong></p>
                             <p>Introduction, Different types of differential equations and solutions, Modelling with differential equations, First order differential Equations, Differential equations with constant coefficients, Linear differential equations, Solutions in series, Laplace transformations, System of ordinary differential equations, Numerical solutions to ODEs, Concept of probability, Discrete probability distributions.</p>
                             <p>(Lectures &#45; 36h , &nbsp;Tutorial classes &#45; 9h)</p>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>&nbsp;EM313: Discrete Mathematics (3 credits)</strong></span></p>
+                            <p id="subject_EM313"><span style="text-decoration: underline;"><strong>&nbsp;EM313: Discrete Mathematics (3 credits)</strong></span></p>
                             <p><strong>Course content:</strong></p>
                             <p>Fundamentals, Combinatories, Graph theory, Algorithms, Prepositional calculus, Mathematical models for computing machines.</p>
                             <p>(Lectures &#45; 36h , Tutorial Classes &#45; 9h )</p>
                             <p>&nbsp;</p>
                             <hr>
-                            <p><span style="text-decoration: underline;"><strong>EE282: Network Analysis for Computer Engineering (3 credits)</strong></span></p>
+                            <p id="subject_EE282"><span style="text-decoration: underline;"><strong>EE282: Network Analysis for Computer Engineering (3 credits)</strong></span></p>
                             <p><strong>Course Content: </strong></p>
                             <p>Review of DC circuits, First-order circuits, Second-order circuits, Sinusoidal steady state analysis, Laplace transform and network analysis, Two-port networks</p>
                             <p>(Lectures &#45; &nbsp;45h)</p>
@@ -345,7 +385,7 @@
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                        <a id="sem_4" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
         Semester 4
       </a>
                     </div>
@@ -355,7 +395,7 @@
                                 <p>The following compulsory courses are offered to Computer Engineering students in their 4th semester.</p>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>CO224 Computer Architecture (3 credits) &nbsp;<em>Prerequisites: CO221, CO222</em></strong></span></p>
+                                <p  id="subject_CO224"><span style="text-decoration: underline;"><strong>CO224 Computer Architecture (3 credits) &nbsp;<em>Prerequisites: CO221, CO222</em></strong></span></p>
                                 <p><strong>Course Content:</strong></p>
                                 <p>Overview, Fundamentals of computer architecture, Computer arithmetic, CPU organization, Pipelining, Memory hierarchies, Interfacing and communication, Performance issues, Multiprocessors.</p>
                                 <p>(Lectures &#45; 29h , Tutorial classes &#45; 4h, &nbsp;Practical classes &#45; 14h, &nbsp;Assignments &#45; 10h)</p>
@@ -365,7 +405,7 @@
                                 </ul>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>CO225 Software Construction (3 credits) <em>Prerequisite: CO222</em></strong></span></p>
+                                <p  id="subject_CO225"><span style="text-decoration: underline;"><strong>CO225 Software Construction (3 credits) <em>Prerequisite: CO222</em></strong></span></p>
                                 <p><strong>Course Content:</strong></p>
                                 <p>Introduction of features of a selected language, Data collections (containers), Input/output, error handling and parsing textual formats, Declarative programming, Classes and objects, Event-driven programming, Concurrency and network clients, Code quality.</p>
                                 <p>(Lectures &#45;&nbsp;25h, &nbsp;Tutorial classes &#45;&nbsp;6h, &nbsp;Practical classes &#45;&nbsp;20h, &nbsp;&nbsp;Assignments &#45;&nbsp;8h)</p>
@@ -377,7 +417,7 @@
                                 </ul>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>CO226 Database Systems (3 credits) <em>Prerequisites: CO222, EM313</em></strong></span></p>
+                                <p  id="subject_CO226"><span style="text-decoration: underline;"><strong>CO226 Database Systems (3 credits) <em>Prerequisites: CO222, EM313</em></strong></span></p>
                                 <p><strong>Course Content:</strong></p>
                                 <p>Introduction to database systems, Data modelling, RDBMS concepts, Database query languages, Database programming techniques, Introduction to indexes and query optimization, Introduction to transaction processing, Database Project.</p>
                                 <p>(Lectures &#45;&nbsp;31h, Tutorial classes &#45;&nbsp;4h, Practical classes &#45;&nbsp;12h, &nbsp;Assignments &#45;&nbsp;8h).</p>
@@ -387,19 +427,19 @@
                                 </ul>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>EM202 Mathematics IV (3 credits)</strong></span></p>
+                                <p  id="subject_EM202"><span style="text-decoration: underline;"><strong>EM202 Mathematics IV (3 credits)</strong></span></p>
                                 <p><strong>Course Content:</strong></p>
                                 <p>Functions of several variables, Partial derivatives double and triple integration, Vector fields and operators, Orthogonal curvilinear coordinates, Integrals and integral theorems, Constrained optimisation of functions of several variables, Continuous probability distributions, Sampling distributions, Estimation and confidence intervals, Hypothesis testing.</p>
                                 <p>(Lectures &#45;&nbsp;36h, Tutorial classes &#45;&nbsp;9h )</p>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>EM314 Numerical Methods (3 credits)</strong></span></p>
+                                <p id="subject_EM314"><span style="text-decoration: underline;"><strong>EM314 Numerical Methods (3 credits)</strong></span></p>
                                 <p><strong>Course content:</strong></p>
                                 <p>Introduction, Solutions to systems of linear equations, Solutions to non-linear equations, Interpolation, Approximation and curve fitting, Numerical calculus, Numerical solutions to ordinary differential equations, Introduction to numerical solutions to partial differential equations.</p>
                                 <p>(Lectures &#45;&nbsp;31h, Tutorial classes &#45;&nbsp;4h, &nbsp;Assignments &#45;&nbsp;20h 5)</p>
                                 <p>&nbsp;</p>
                                 <hr>
-                                <p><span style="text-decoration: underline;"><strong>EE285 Electronics I (3 credits)</strong></span></p>
+                                <p id="subject_EE285"><span style="text-decoration: underline;"><strong>EE285 Electronics I (3 credits)</strong></span></p>
                                 <p><strong>Course Content:</strong></p>
                                 <p>Diodes, Bipolar Junction Transistor, Amplifiers, Operational Amplifiers(OPAMP), OPAMP Applications, Junction Field Effect Transistors(JFET), Metal Oxide Semiconductor(MOS) Field Effect Transistors, Electronic Laboratory.</p>
                                 <p>(Lectures &#45;&nbsp;30h, Tutorial classes &#45;&nbsp;3h, Practical classes &#45;&nbsp;21h, &nbsp;Assignments &#45;&nbsp;3h)</p>
@@ -417,7 +457,7 @@
 
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                            <a id="sem_5" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
         Semester 5
       </a>
                         </div>
@@ -426,7 +466,7 @@
                                <p>The following compulsory courses are offered to Computer Engineering students in their 5th semester.</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO321</b><b> Embedded Systems (3 credits) <i>Prerequisite</i>: CO224</b></span></p>
+<p id="subject_CO321"><span style="text-decoration: underline;"><b>CO321</b><b> Embedded Systems (3 credits) <i>Prerequisite</i>: CO224</b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Introduction to microcontrollers, Memory organization of microcontrollers, Programming of flash microcontrollers, I/O port configuration and programming interfaces, A/D converters and applications, Timer systems of microcontrollers, Applications of non-volatile memory, Industrial Applications, Student Project.</p>
 <p>(L31, P20, A8 =45).</p>
@@ -437,7 +477,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO322</b><b> Data Structures and Algorithms (3 credits) <i>Prerequisite</i>: CO225</b></span></p>
+<p id="subject_CO322"><span style="text-decoration: underline;"><b>CO322</b><b> Data Structures and Algorithms (3 credits) <i>Prerequisite</i>: CO225</b></span></p>
 <p><strong>Course Content:</strong></p>
 <p>Running time and time complexity, Divide and conquer, Linear abstract data types, Hashing and the set ADT, Trees, Graphs, Greedy algorithms, Dynamic programming.</p>
 <p>(L30, P18, A12 =45).</p>
@@ -449,7 +489,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO323</b><b> Computer Communication Networks II (3 credits) <i>Prerequisite</i>: CO223</b></span></p>
+<p id="subject_CO323"><span style="text-decoration: underline;"><b>CO323</b><b> Computer Communication Networks II (3 credits) <i>Prerequisite</i>: CO223</b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>An overview of communication networks, Network application design and network programming, Control-functionalities, Transport protocols, Packet-switching networks and routing, Transmission over links, multiple access protocols and local area networks, Physical transmission issues, Review: pig-picture of networking, trends and challenges, Student seminars.</p>
 <p>(L30, T2, P23, A3 =45).</p>
@@ -460,7 +500,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO324 Network and Web Application Design (3 credits) <em>Prerequisites: CO223, CO225</em></b></span></p>
+<p id="subject_CO324"><span style="text-decoration: underline;"><b>CO324 Network and Web Application Design (3 credits) <em>Prerequisites: CO223, CO225</em></b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Review of Internet protocol stack, Network servers, Design of application protocols, I/O concurrency, Remote procedure calls, HTTP and HTML, Dynamic web content generation, Web frameworks, Browser scripting, Network application security, Deployment considerations.</p>
 <p>(L26, T4, P16, A14 =45).</p>
@@ -471,7 +511,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO325 Computer and Network Security (3 credits) <em>Prerequisite: CO223</em></b></span></p>
+<p id="subject_CO325"><span style="text-decoration: underline;"><b>CO325 Computer and Network Security (3 credits) <em>Prerequisite: CO223</em></b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Introduction, Symmetric key ciphers, Asymmetric key ciphers, Cryptographic hash functions, Cryptographic primitives and protocols, Protocol attacks and countermeasures, Computer security &#45; Authentication mechanisms and protocols, Computer security &#45; Access control, Network security&nbsp; &#45; Identity and trust systems, Network security&nbsp; &#45; Secure Communication, Usability, psychology, organisational security policy.</p>
 <p>(L30, T5, P10, A10 =45).</p>
@@ -482,7 +522,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>EE386 Electronics II (3 credits) <i>Prerequisite</i>: EE285</b></span></p>
+<p id="subject_EE386"><span style="text-decoration: underline;"><b>EE386 Electronics II (3 credits) <i>Prerequisite</i>: EE285</b></span></p>
 <p>Course Content: Data conversion circuits, Diode Logic Circuits, BJT Logic families, MOS Logic Families, Storage Elements, Design Parameter and issues, Interfacing logic families, Active Filters, Oscillators, Circuit modeling and simulation, Electronic Laboratory.</p>
 <p>(L33, P24=45).</p>
 <p><b>Textbooks and References:</b></p>
@@ -499,7 +539,7 @@
 
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+                            <a id="sem_6" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
         Semester 6
       </a>
                         </div>
@@ -508,13 +548,13 @@
                                <p>The following compulsory courses are offered to Computer Engineering students in their 6th semester.</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO326 Computer Systems Engineering: Industrial Networks (3 credits) <em>Prerequisite: CO321, EE386</em></b></span></p>
+<p id="subject_CO326"><span style="text-decoration: underline;"><b>CO326 Computer Systems Engineering: Industrial Networks (3 credits) <em>Prerequisite: CO321, EE386</em></b></span></p>
 <p><strong>Course Content:</strong></p>
 <p>Introduction, Hardware Components for designing control systems, Designing simple digital systems using a standard PC, Designing I/O systems for standard PC, Development of control systems using microcontrollers, Communication for industrial control systems, Instrument automaton and development of test systems, PC based test, measurement and control modules and modular systems, SCADA and Industrial Automation Systems, Industrial automation project.</p>
 <p>(L34, P12, A10 =45).</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO327 Operating Systems (3 credits) <em>Prerequisite: CO224, CO322</em></b></span></p>
+<p id="subject_CO327"><span style="text-decoration: underline;"><b>CO327 Operating Systems (3 credits) <em>Prerequisite: CO224, CO322</em></b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Introduction, OS abstractions, Threads, Processes, Synchronization, File systems, IO subsystem, OS implementation methods, Self-study.</p>
 <p>(L31, P12, A16 =45).</p>
@@ -525,7 +565,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO328 Software Engineering (3 credits) <em>Prerequisite: CO226, CO322, CO324</em></b></span></p>
+<p id="subject_CO328"><span style="text-decoration: underline;"><b>CO328 Software Engineering (3 credits) <em>Prerequisite: CO226, CO322, CO324</em></b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Introduction, Lightweight processes, Requirements specification, Domain modelling, Implementation transition, Testing and contracts, Principled object-orientation, Architectural techniques, Software reengineering, Software Engineering Project.</p>
 <p>(L28, T3, P8, A20 =45).</p>
@@ -537,7 +577,7 @@
 </ul>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>EE387 Signal Processing (4 credits) <i>Prerequisites</i>: EE282, EM202</b></span></p>
+<p id="subject_EE387"><span style="text-decoration: underline;"><b>EE387 Signal Processing (4 credits) <i>Prerequisites</i>: EE282, EM202</b></span></p>
 <p><strong>Course Content:</strong></p>
 <p>Fundamental Concepts of Signals, Time Domain Processing of Signals, Fourier Series, Fourier Transformation, Frequency Domain Analysis of Discrete-time Signals, Transfer Functions, Frequency Domain Processing of Singals.</p>
 <p>(L39, T13, P8, A8=60).</p>
@@ -550,7 +590,7 @@
 
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+                            <a id="sem_7" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
         Semester 7
       </a>
                         </div>
@@ -559,25 +599,25 @@
                                 <p>The following compulsory courses are offered to Computer Engineering students in their 7th semester.</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO421 Final Year Project I (3 credits)</b></span></p>
+<p id="subject_CO421"><span style="text-decoration: underline;"><b>CO421 Final Year Project I (3 credits)</b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Project planning, literature review, implementation, evaluation, report writing, presentation of findings, project demonstration.</p>
 <p>(A90 =45).</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO422 Professional Practices (2 credits)</b></span></p>
+<p id="subject_CO422"><span style="text-decoration: underline;"><b>CO422 Professional Practices (2 credits)</b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Professionalism, Group Dynamics and Psychology, Communication Skills.</p>
 <p>(L25, A10=30).</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO423 Software Project Management (2 credits) <i>Prerequisite:</i> CO328</b></span></p>
+<p id="subject_CO423"><span style="text-decoration: underline;"><b>CO423 Software Project Management (2 credits) <i>Prerequisite:</i> CO328</b></span></p>
 <p><strong>Course Content: </strong></p>
 <p>Introduction to the subject, Project life cycle and organization, Team structures, The role of risk in the life cycle, Project Quality management, Application quality requirements, Process improvement models, Project Management topics.</p>
 <p>(L22, P6, A10=30).</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO424 Information Systems Management (2 credits) <i>Prerequisite:</i> CO328</b></span></p>
+<p id="subject_CO424"><span style="text-decoration: underline;"><b>CO424 Information Systems Management (2 credits) <i>Prerequisite:</i> CO328</b></span></p>
 <p><strong>Course Content:</strong></p>
 <p>Introduction to Information Systems, Relationship between IS and the business, IS planning and budgeting, Acquiring information technology resources and capabilities, Risk management, Case study.</p>
 <p>(L20, A20=30).</p>
@@ -591,7 +631,7 @@
 
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
+                            <a id="sem_8" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
         Semester 8
       </a>
                         </div>
@@ -600,7 +640,7 @@
                                 <p>The following compulsory courses are offered to Computer Engineering students in their 8th semester.</p>
 <p>&nbsp;</p>
 <hr>
-<p><span style="text-decoration: underline;"><b>CO425 Final Year Project II (3 credits)</b></span></p>
+<p id="subject_CO425"><span style="text-decoration: underline;"><b>CO425 Final Year Project II (3 credits)</b></span></p>
 <p><strong>Course Content:</strong></p>
 <p>Project planning, literature review, implementation, evaluation, report writing, presentation of findings, project demonstration.</p>
 <p>(Assignments &#45; 90h).</p>
@@ -618,6 +658,8 @@
  <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTec">
+        <span id="subject_TE_1"></span>
+        <span id="subject_TE_2"></span>
         Technical Electives
       </a>
                         </div>
@@ -741,7 +783,8 @@
 <tbody>
 <tr>
 <td valign="top" width="319">
-<p align="center"><b>General Elective </b></p>
+<span id="subject_GE_1"></span>
+<p id="subject_GE2" align="center"><b>General Elective </b></p>
 <p align="center"><b>Course </b></p>
 </td>
 <td valign="top" width="72">
@@ -1174,7 +1217,7 @@
 
                             </div>
                         </div>
-                        <button class="SeeMore2  SeeMore" data-toggle="collapse" href="#collapseGen">See More</button>
+                        <button id="sem_GS" class="SeeMore2  SeeMore" data-toggle="collapse" href="#collapseGen">See More</button>
                     </div>
 
 
@@ -1192,7 +1235,7 @@
 
         </div>
         <!-- end container -->
-
+<a name="C0221"></a>
         <div class="container custom_footer_container" id="footerContainer">
 
             <div class="container custom_footer">
@@ -1212,7 +1255,6 @@
             </div>
         </div>
 
-
         <!-- All Javascript at the bottom of the page for faster page loading -->
 
         <!-- First try for the online version of jQuery-->
@@ -1228,6 +1270,23 @@
 
         <!-- Custom JS -->
         <script src="includes/js/script1.js"></script>
+
+        <script type="text/javascript">
+            var currentCollapsed = -1;
+            function gotoSubject(semester, subject){
+                // alert("Semester: " + semester + "  Subject: " + subject);
+                console.log("Semester: " + semester + "  Subject: " + subject);
+
+                if(currentCollapsed!=semester){
+                    $("#sem_" + semester).click();
+                }
+                currentCollapsed = semester;
+                $('html,body').animate({scrollTop: $("#subject_"+subject).offset().top - 150}, 300);
+            }
+            $(document).ready(function(){
+                $("#flashContent").css("height",($(window).innerWidth()*0.8 + "px"));
+            });
+        </script>
 </body>
 
 </html>

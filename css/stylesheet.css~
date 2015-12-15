@@ -10,9 +10,6 @@
 width:900px;
 
 }*/
-.abc{
-visibility: hidden;
-}
 .row_disp {
     display: table;
     background-color: green;
